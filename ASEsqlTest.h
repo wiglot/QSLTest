@@ -9,6 +9,10 @@ Q_OBJECT
 public:
     ASEsqlTest();
     virtual ~ASEsqlTest();
+public slots:
+    void connecteDB(bool);
+signals:
+    void connected(bool);
 };
 
 #endif // ASEsqlTest_H
